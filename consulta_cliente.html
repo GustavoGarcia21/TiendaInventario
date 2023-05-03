@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gestion Tienda Inventario</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="fondo">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    	<div class="row" id="borde">
+    	<div class="col">
+    		<h1 class="cabecera">
+    			Buscá tu cliente
+    		</h1>
+    	</div>
+    	<div class="col" >
+    		<img class="imagen"src="LogoTienda2.png" alt="">
+    	</div>
+    	</div>
+    	<form action="registrardatos.php" method="post" class="d-grid gap-1 col-4 mx-auto">
+ 			 Ingresá DNI/CUIT del cliente:
+  			<input type="text" name="nombre" size="12">
+  		</form>
+    	<div class="d-grid gap-1 col-4 mx-auto">
+       		<button type="submit" class="btn btn-dark">
+       			Consultar Cliente
+       		</button>
+       	</div>
+        <br>
+    	<div>
+    		<table>
+    			<thead class="tabla">
+    				<th class="col-md-1" class="tabla"> <div class="border border-black"> DNI/CUIT</th> </div>
+    				<th class="col-md-3" class="tabla"> <div class="border border-black">Nombre</th> </div>
+    				<th class="col-md-3" class="tabla"> <div class="border border-black">Apellido</th> </div>
+    				<th class="col-md-1" class="tabla"> <div class="border border-black">Teléfono</th> </div>
+    				<th class="col-md-2" class="tabla"> <div class="border border-black">Email</th></div>
+    				<th class="col-md-1" class="tabla"> <div class="border border-black">Tipo de Cliente</th></div>
+  				</thead>
+  				<tr class="tablaDos">
+    				<td class="col-md-1">"Sin datos"</td>
+    				<td class="col-md-3">"Sin datos"</td>
+    				<td class="col-md-3">"Sin datos"</td> 
+    				<td class="col-md-1">"Sin datos"</td> 
+    				<td class="col-md-2">"Sin datos"</td> 
+    				<td class="col-md-1">"Sin datos"</td>
+  				</tr>
+    		</table>
+    		<br>
+    		<table>
+    			<thead class="tabla">
+    				<th class="col-md-3"> <div class="border border-black">Domicilio</th></div>
+    				<th class="col-md-1"> <div class="border border-black">Provincia</th></div>
+    				<th class="col-md-1"> <div class="border border-black">C.P.</th></div>
+  				</thead>
+  				<tr class="tablaDos">
+    				<td class="col-md-3">"Sin datos"</td>
+    				<td class="col-md-1">"Sin datos"</td>
+    				<td class="col-md-1">"Sin datos"</td>
+  				</tr>
+    		</table>
+    	</div>
+
+    	<div class="form-check">
+  			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  			<label class="form-check-label" for="flexCheckDefault">
+    			Modificar
+  			</label>
+		</div>
+		<div class="form-check">
+  			<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  			<label class="form-check-label" for="flexCheckChecked">
+    			Eliminar
+  			</label>
+		</div>
+		<div style="text-align: right;">
+      <button type="submit" class="btn btn-secondary btn-lg">
+        <a  href="index.html" >   <!-- Colocar aquí link de creacion de orden -->
+          Principal
+        </a>
+      </button>
+
+      <button type="submit" class="btn btn-secondary btn-lg">
+        <a  href="new-client.html" >   <!-- Colocar aquí link de creacion de orden -->
+          Generar nuevo cliente
+        </a>
+      </button>
+      </div> 
+</body>
+</html>
